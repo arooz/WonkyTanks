@@ -67,6 +67,9 @@ public class WebsockAdaptor : MonoBehaviour {
 		case SetIsFinishActiveID:
 			OwningGame.BroadcastMessage("SetIsFinishActive", ReconstructSetIsFinishActiveMsg(id_data_pair[1]));
 			break;
+		case UpdateCollectableTextID:
+			OwningGame.BroadcastMessage ("UpdateCollectableText", ReconstructUpdateCollectableText (id_data_pair [1]));
+			break;
 		default:
 			// No-op?
 			break;
